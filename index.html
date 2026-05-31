@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scholar's Heaven School — Empowering students from early education to Matriculation in Mulazai, Peshawar. Admissions open now.">
+    <title>Scholar's Heaven School | Excellence in Education</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scrollProgressBar"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <img src="logo.jpg" alt="Scholar's Heaven Logo" class="logo-img" onerror="this.style.display='none'">
+                <span class="logo-icon-fallback"><i class="fa-solid fa-graduation-cap"></i></span>
+                <span id="schoolNameLogo">Scholar's Heaven</span>
+            </a>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#academics" class="nav-link">Academics</a>
+                <a href="#faculty" class="nav-link">Faculty</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon" id="themeIcon"></i>
+                </button>
+                <a href="#contact" class="btn btn-enroll">Enroll Now</a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <div class="mobile-menu-inner">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#academics" class="mobile-link">Academics</a>
+            <a href="#faculty" class="mobile-link">Faculty</a>
+            <a href="#gallery" class="mobile-link">Gallery</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+            <a href="#contact" class="btn btn-primary mobile-cta">Enroll Now</a>
+        </div>
+    </div>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="home" class="hero">
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge" data-aos="fade-down" data-aos-duration="800">
+                <i class="fa-solid fa-star"></i> Admissions Open 2025
+            </div>
+            <h1 class="hero-title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                Welcome to<br>
+                <span class="hero-highlight" id="typingText"></span>
+            </h1>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                Empowering the leaders of tomorrow — from early education to Matriculation — with quality learning, ethical values, and a nurturing environment.
+            </p>
+            <div class="hero-buttons" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <a href="#contact" class="btn btn-primary btn-glow">
+                    <i class="fa-solid fa-user-plus"></i> Enroll Now
+                </a>
+                <a href="#about" class="btn btn-outline-light">
+                    <i class="fa-solid fa-circle-play"></i> Discover More
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <div class="scroll-arrow"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+    </section>
+
+    <!-- ===== STATS SECTION ===== -->
+    <section class="stats-section" id="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="stat-icon"><i class="fa-solid fa-users-line"></i></div>
+                    <div class="stat-number" data-count="850">0</div>
+                    <div class="stat-plus">+</div>
+                    <div class="stat-label">Happy Students</div>
+                </div>
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="stat-icon"><i class="fa-solid fa-chalkboard-teacher"></i></div>
+                    <div class="stat-number" data-count="40">0</div>
+                    <div class="stat-plus">+</div>
+                    <div class="stat-label">Expert Teachers</div>
+                </div>
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="stat-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                    <div class="stat-number" data-count="15">0</div>
+                    <div class="stat-plus">+</div>
+                    <div class="stat-label">Years of Excellence</div>
+                </div>
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="stat-icon"><i class="fa-solid fa-trophy"></i></div>
+                    <div class="stat-number" data-count="97">0</div>
+                    <div class="stat-plus">%</div>
+                    <div class="stat-label">Pass Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ADMISSIONS SECTION ===== -->
+    <section id="admissions" class="admissions-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">🎉 New Session</div>
+                <h2 class="section-title">Admissions Open</h2>
+                <div class="underline mx-auto"></div>
+                <p class="section-desc">Join our family of learners. Limited seats available!</p>
+            </div>
+            <div class="admissions-content" data-aos="zoom-in" data-aos-duration="900">
+                <img src="poster.jpg" alt="Admissions Open Poster" class="admission-poster" onerror="this.style.display='none'">
+                <div class="admission-cta-box">
+                    <div class="cta-icon"><i class="fa-solid fa-school"></i></div>
+                    <h3>Seats Filling Fast!</h3>
+                    <p>From Nursery to Matric — enroll your child today and give them the best start in life.</p>
+                    <div class="admission-features">
+                        <span><i class="fa-solid fa-check"></i> Nursery to Class 10</span>
+                        <span><i class="fa-solid fa-check"></i> Affordable Fees</span>
+                        <span><i class="fa-solid fa-check"></i> Qualified Staff</span>
+                        <span><i class="fa-solid fa-check"></i> Safe Environment</span>
+                    </div>
+                    <a href="#contact" class="btn btn-primary btn-glow">
+                        <i class="fa-solid fa-paper-plane"></i> Apply Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WAVE DIVIDER -->
+    <div class="wave-divider wave-light">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z"/></svg>
+    </div>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">Who We Are</div>
+                <h2 class="section-title">About Us</h2>
+                <div class="underline mx-auto"></div>
+                <p class="section-desc">Building a strong foundation for lifelong learning.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text" data-aos="fade-right" data-aos-delay="100">
+                    <h3>Our Vision & Mission</h3>
+                    <p>We are dedicated to providing a holistic education that fosters intellectual growth, ethical values, and physical well-being. Offering classes from Nursery up to Matriculation, our mission is to prepare students to face global challenges with confidence and integrity.</p>
+                    <ul class="features-list">
+                        <li><span class="check-icon"><i class="fa-solid fa-check"></i></span> Experienced & Qualified Faculty</li>
+                        <li><span class="check-icon"><i class="fa-solid fa-check"></i></span> Modern Teaching Methodologies</li>
+                        <li><span class="check-icon"><i class="fa-solid fa-check"></i></span> Focus on Character Building</li>
+                        <li><span class="check-icon"><i class="fa-solid fa-check"></i></span> Extracurricular Development</li>
+                        <li><span class="check-icon"><i class="fa-solid fa-check"></i></span> Safe & Inclusive Environment</li>
+                    </ul>
+                </div>
+                <div class="principal-card glass-card" data-aos="fade-left" data-aos-delay="200">
+                    <div class="principal-img-placeholder">
+                        <img src="principal.jpg" alt="Principal Mr. Faisal Khan" class="principal-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+                        <i class="fa-solid fa-user-tie" style="display: none;"></i>
+                    </div>
+                    <div class="principal-info">
+                        <div class="quote-mark">"</div>
+                        <p class="quote">Education is not just about academic excellence — it's about shaping character. We strive to bring out the best in every child, every single day.</p>
+                        <div class="quote-mark closing">"</div>
+                        <h4 class="principal-name" id="principalName">Mr. Faisal Khan</h4>
+                        <span class="principal-title"><i class="fa-solid fa-medal"></i> Principal, Scholar's Heaven School</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WAVE DIVIDER -->
+    <div class="wave-divider wave-dark">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,0 1080,80 1440,40 L1440,80 L0,80 Z"/></svg>
+    </div>
+
+    <!-- ===== ACADEMICS SECTION ===== -->
+    <section id="academics" class="academics-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">What We Offer</div>
+                <h2 class="section-title">Academics & Facilities</h2>
+                <div class="underline mx-auto"></div>
+                <p class="section-desc">Providing the best environment for academic and personal growth.</p>
+            </div>
+            <div class="cards-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="card-icon-wrap">
+                        <div class="card-icon"><i class="fa-solid fa-book-open-reader"></i></div>
+                    </div>
+                    <h3>Quality Education</h3>
+                    <p>Comprehensive curriculum designed to stimulate curiosity and foster a love for learning from an early age.</p>
+                    <div class="card-footer-link">Learn More <i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon-wrap">
+                        <div class="card-icon"><i class="fa-solid fa-flask-vial"></i></div>
+                    </div>
+                    <h3>Science Labs</h3>
+                    <p>Fully equipped laboratories that provide hands-on experience and practical knowledge for science subjects.</p>
+                    <div class="card-footer-link">Learn More <i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon-wrap">
+                        <div class="card-icon"><i class="fa-solid fa-desktop"></i></div>
+                    </div>
+                    <h3>Computer IT</h3>
+                    <p>Modern computer labs to ensure our students are well-versed in digital skills for the modern world.</p>
+                    <div class="card-footer-link">Learn More <i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-icon-wrap">
+                        <div class="card-icon"><i class="fa-solid fa-futbol"></i></div>
+                    </div>
+                    <h3>Sports & Athletics</h3>
+                    <p>Spacious playgrounds that encourage physical fitness, teamwork, sportsmanship and healthy competition.</p>
+                    <div class="card-footer-link">Learn More <i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-icon-wrap">
+                        <div class="card-icon"><i class="fa-solid fa-book"></i></div>
+                    </div>
+                    <h3>Library</h3>
+                    <p>A rich library with thousands of books, references, and learning materials to enrich students' knowledge.</p>
+                    <div class="card-footer-link">Learn More <i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card-icon-wrap">
+                        <div class="card-icon"><i class="fa-solid fa-paintbrush"></i></div>
+                    </div>
+                    <h3>Arts & Creativity</h3>
+                    <p>Dedicated art programs to develop creativity, imagination, and expression in every student.</p>
+                    <div class="card-footer-link">Learn More <i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FACULTY SECTION ===== -->
+    <section id="faculty" class="faculty-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">Meet the Team</div>
+                <h2 class="section-title">Our Faculty</h2>
+                <div class="underline mx-auto"></div>
+                <p class="section-desc">Dedicated educators who inspire excellence every day.</p>
+            </div>
+            <div class="faculty-grid">
+                <div class="faculty-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="faculty-img">
+                        <div class="faculty-placeholder"><i class="fa-solid fa-user-tie"></i></div>
+                        <div class="faculty-overlay">
+                            <a href="#" class="faculty-social"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" class="faculty-social"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3>Mr. Faisal Khan</h3>
+                        <span class="faculty-role">Principal</span>
+                        <p>M.Phil Education | 20+ Years Experience</p>
+                    </div>
+                </div>
+                <div class="faculty-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faculty-img">
+                        <div class="faculty-placeholder female"><i class="fa-solid fa-user"></i></div>
+                        <div class="faculty-overlay">
+                            <a href="#" class="faculty-social"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" class="faculty-social"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3>Ms. Ayesha Bibi</h3>
+                        <span class="faculty-role">Head of Sciences</span>
+                        <p>M.Sc Chemistry | 12 Years Experience</p>
+                    </div>
+                </div>
+                <div class="faculty-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faculty-img">
+                        <div class="faculty-placeholder"><i class="fa-solid fa-user-tie"></i></div>
+                        <div class="faculty-overlay">
+                            <a href="#" class="faculty-social"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" class="faculty-social"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3>Mr. Tariq Hussain</h3>
+                        <span class="faculty-role">Mathematics Teacher</span>
+                        <p>B.Sc Mathematics | 10 Years Experience</p>
+                    </div>
+                </div>
+                <div class="faculty-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faculty-img">
+                        <div class="faculty-placeholder female"><i class="fa-solid fa-user"></i></div>
+                        <div class="faculty-overlay">
+                            <a href="#" class="faculty-social"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" class="faculty-social"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3>Ms. Nadia Rehman</h3>
+                        <span class="faculty-role">English Teacher</span>
+                        <p>MA English Literature | 8 Years Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS SECTION ===== -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">What Parents Say</div>
+                <h2 class="section-title">Testimonials</h2>
+                <div class="underline mx-auto"></div>
+                <p class="section-desc">Hear from families who trust Scholar's Heaven.</p>
+            </div>
+            <div class="testimonials-slider" data-aos="fade-up" data-aos-delay="100">
+                <div class="testimonial-track" id="testimonialTrack">
+                    <div class="testimonial-card">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p class="testimonial-text">"Scholar's Heaven has been a blessing for my children. The teachers are incredibly dedicated and my son's grades have improved dramatically. I highly recommend this school!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
+                            <div class="author-info">
+                                <strong>Ahmad Shah</strong>
+                                <span>Parent of Class 8 Student</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p class="testimonial-text">"The best school in Peshawar! My daughter has become so confident and academically strong. The principal Mr. Faisal is very approachable and caring."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
+                            <div class="author-info">
+                                <strong>Fatima Gul</strong>
+                                <span>Parent of Class 5 Student</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+                        <p class="testimonial-text">"We enrolled our son two years ago and the transformation has been remarkable. Excellent teaching staff and a very clean, safe environment for children."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
+                            <div class="author-info">
+                                <strong>Zia Khan</strong>
+                                <span>Parent of Class 10 Student</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="t-btn" id="tPrev"><i class="fa-solid fa-chevron-left"></i></button>
+                    <div class="t-dots" id="tDots"></div>
+                    <button class="t-btn" id="tNext"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GALLERY SECTION ===== -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">Our Campus</div>
+                <h2 class="section-title">Photo Gallery</h2>
+                <div class="underline mx-auto"></div>
+                <p class="section-desc">A glimpse of life at Scholar's Heaven School.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="0" data-caption="Annual Prize Giving Ceremony">
+                    <div class="gallery-placeholder g1"><i class="fa-solid fa-award"></i><span>Prize Ceremony</span></div>
+                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100" data-caption="Science Lab Activities">
+                    <div class="gallery-placeholder g2"><i class="fa-solid fa-flask-vial"></i><span>Science Lab</span></div>
+                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200" data-caption="Sports Day 2024">
+                    <div class="gallery-placeholder g3"><i class="fa-solid fa-futbol"></i><span>Sports Day</span></div>
+                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300" data-caption="Students taking mid-term exams in the courtyard">
+                    <img src="exams.jpg" alt="Student Examinations" class="gallery-img" style="width: 100%; height: 100%; object-fit: cover; transition: var(--transition);" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="gallery-placeholder g4" style="display: none;"><i class="fa-solid fa-chalkboard"></i><span>Classrooms & Exams</span></div>
+                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400" data-caption="Computer IT Lab">
+                    <div class="gallery-placeholder g5"><i class="fa-solid fa-desktop"></i><span>IT Lab</span></div>
+                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="500" data-caption="Cultural Event 2024">
+                    <div class="gallery-placeholder g6"><i class="fa-solid fa-music"></i><span>Cultural Event</span></div>
+                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose"><i class="fa-solid fa-xmark"></i></button>
+        <div class="lightbox-content" id="lightboxContent"></div>
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+
+    <!-- ===== EVENTS SECTION ===== -->
+    <section class="events-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">What's Coming</div>
+                <h2 class="section-title">Upcoming Events</h2>
+                <div class="underline mx-auto"></div>
+                <p class="section-desc">Stay updated with the latest happenings at Scholar's Heaven.</p>
+            </div>
+            <div class="events-grid">
+                <div class="event-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="event-date">
+                        <span class="event-day">15</span>
+                        <span class="event-month">Jun</span>
+                    </div>
+                    <div class="event-details">
+                        <span class="event-tag">Academic</span>
+                        <h3>Annual Prize Giving Ceremony</h3>
+                        <p><i class="fa-solid fa-clock"></i> 10:00 AM — 1:00 PM</p>
+                        <p><i class="fa-solid fa-location-dot"></i> School Auditorium</p>
+                    </div>
+                </div>
+                <div class="event-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="event-date">
+                        <span class="event-day">22</span>
+                        <span class="event-month">Jun</span>
+                    </div>
+                    <div class="event-details">
+                        <span class="event-tag sports">Sports</span>
+                        <h3>Inter-School Cricket Tournament</h3>
+                        <p><i class="fa-solid fa-clock"></i> 9:00 AM — 4:00 PM</p>
+                        <p><i class="fa-solid fa-location-dot"></i> School Ground</p>
+                    </div>
+                </div>
+                <div class="event-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="event-date">
+                        <span class="event-day">01</span>
+                        <span class="event-month">Jul</span>
+                    </div>
+                    <div class="event-details">
+                        <span class="event-tag new-session">New Session</span>
+                        <h3>New Academic Session 2025-26 Begins</h3>
+                        <p><i class="fa-solid fa-clock"></i> 8:00 AM</p>
+                        <p><i class="fa-solid fa-location-dot"></i> All Campuses</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">Get In Touch</div>
+                <h2 class="section-title">Contact Us</h2>
+                <div class="underline mx-auto"></div>
+                <p class="section-desc">We'd love to hear from you. Reach out for admissions and inquiries.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+                    <div class="info-item">
+                        <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Mulazai, Peshawar, KPK, Pakistan</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+923139306474">+92 313 9306474</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:info@scholarheaven.edu.pk">info@scholarheaven.edu.pk</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon-box"><i class="fa-solid fa-clock"></i></div>
+                        <div>
+                            <h4>School Hours</h4>
+                            <p>Monday – Saturday: 8:00 AM – 2:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container glass-card" data-aos="fade-left" data-aos-delay="200">
+                    <h3 class="form-title"><i class="fa-solid fa-paper-plane"></i> Send a Message</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name"><i class="fa-solid fa-user"></i> Full Name</label>
+                                <input type="text" id="name" placeholder="Your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone"><i class="fa-solid fa-phone"></i> Phone</label>
+                                <input type="tel" id="phone" placeholder="+92 xxx xxxxxxx">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
+                            <input type="email" id="email" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject"><i class="fa-solid fa-tag"></i> Subject</label>
+                            <select id="subject">
+                                <option value="">Select subject...</option>
+                                <option value="admission">Admission Inquiry</option>
+                                <option value="fee">Fee Structure</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message"><i class="fa-solid fa-message"></i> Message</label>
+                            <textarea id="message" rows="4" placeholder="Write your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 btn-glow" id="submitBtn">
+                            <i class="fa-solid fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                    <div class="form-success" id="formSuccess">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <h4>Message Sent!</h4>
+                        <p>Thank you! We'll get back to you within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map Embed -->
+            <div class="map-container" data-aos="fade-up" data-aos-delay="200">
+                <h3><i class="fa-solid fa-map-location-dot"></i> Find Us on Map</h3>
+                <div class="map-embed">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13276.174488043987!2d71.5083!3d33.9717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38d917f7e780c3a9%3A0xb5de64bb16d8f82d!2sPeshawar!5e0!3m2!1sen!2spk!4v1700000000000!5m2!1sen!2spk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Scholar's Heaven School Location"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span>Scholar's Heaven</span>
+                </div>
+                <p>Empowering students with quality education, strong values, and bright futures since 2010.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#about"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="#academics"><i class="fa-solid fa-chevron-right"></i> Academics</a></li>
+                    <li><a href="#faculty"><i class="fa-solid fa-chevron-right"></i> Faculty</a></li>
+                    <li><a href="#gallery"><i class="fa-solid fa-chevron-right"></i> Gallery</a></li>
+                    <li><a href="#contact"><i class="fa-solid fa-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Academics</h4>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Nursery – KG</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Primary (1–5)</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Middle (6–8)</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Secondary (9–10)</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Matric Results</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact-info">
+                <h4>Contact</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Mulazai, Peshawar</p>
+                <p><i class="fa-solid fa-phone"></i> +92 313 9306474</p>
+                <p><i class="fa-solid fa-envelope"></i> info@scholarheaven.edu.pk</p>
+                <p><i class="fa-solid fa-clock"></i> Mon–Sat: 8AM – 2PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> Scholar's Heaven School. All rights reserved.</p>
+            <p>Designed & Developed by <strong style="color: white;">Shakeel Ahmed</strong> with <i class="fa-solid fa-heart" style="color: var(--accent-color);"></i></p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/923139306474" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat with us!</span>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 850, easing: 'ease-in-out', once: true, mirror: false });
+    </script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

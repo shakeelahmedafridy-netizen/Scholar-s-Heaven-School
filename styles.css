@@ -764,26 +764,39 @@ button {
 }
 
 .principal-img-placeholder {
-    width: 160px;
-    height: 160px;
+    width: 100%;
+    max-width: 320px;
+    aspect-ratio: 1 / 1;
     background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
-    border-radius: 50%;
+    border-radius: var(--radius-md);
     margin-bottom: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
     border: 4px solid var(--accent-color);
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--shadow-lg);
     color: white;
     font-size: 4rem;
     overflow: hidden;
+    position: relative;
+    transition: var(--transition);
+}
+
+.principal-img-placeholder:hover {
+    box-shadow: 0 10px 25px var(--glow-color);
+    transform: translateY(-4px);
 }
 
 .principal-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: inherit;
+    transition: var(--transition);
+}
+
+.principal-img-placeholder:hover .principal-img {
+    transform: scale(1.05);
 }
 
 .quote-mark {
@@ -941,6 +954,17 @@ button {
     position: relative;
     overflow: hidden;
     background-color: var(--bg-main);
+}
+
+.faculty-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.faculty-card:hover .faculty-img img {
+    transform: scale(1.08);
 }
 
 .faculty-placeholder {
